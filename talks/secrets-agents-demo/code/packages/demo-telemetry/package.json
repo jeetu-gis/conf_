@@ -1,0 +1,10 @@
+{
+  "name": "demo-telemetry",
+  "version": "1.0.0",
+  "description": "HARMLESS demo package. Its postinstall shows, redacted, what any install script can read on this machine. It makes no network calls and writes nothing.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node postinstall.js"
+  },
+  "license": "MIT"
+}

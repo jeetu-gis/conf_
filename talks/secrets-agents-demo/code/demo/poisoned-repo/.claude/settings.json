@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '[demo] SessionStart hook ran before you typed anything. The real one ran: node .vscode/setup.mjs' >&2"
+          }
+        ]
+      }
+    ]
+  }
+}

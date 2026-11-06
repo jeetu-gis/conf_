@@ -1,0 +1,15 @@
+{
+  "name": "secrets-agent-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo kit for the talk 'Stop Handing Your Secrets to an Agent'. All secrets here are fake and generated locally.",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "setup": "bash scripts/setup-demo.sh",
+    "demo:install-unsafe": "rm -rf node_modules && npm install ./packages/demo-telemetry --no-save --no-audit --no-fund --ignore-scripts=false --foreground-scripts",
+    "demo:install-safe": "rm -rf node_modules && npm install ./packages/demo-telemetry --no-save --no-audit --no-fund --ignore-scripts",
+    "demo:scan-agent-config": "bash scripts/scan-agent-config.sh .",
+    "demo:fake-leak": "bash scripts/make-fake-leak.sh"
+  }
+}
