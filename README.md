@@ -21,6 +21,23 @@ cd <repo-name>
 git sparse-checkout set talks/YYYY-MM-talk-name
 ```
 
+## 🗂️ Repository Structure
+ 
+```
+.
+├── README.md                  ← You are here
+├── LICENSE
+├── talks/
+│   └── talk-name/             ← One folder per talk
+│       ├── README.md         
+│       ├── code/              ← Demo code shown in the talk
+│       ├── resources/         ← Sample datasets,slides,notes,reading references etc.
+│       
+└── shared/                    ← Utilities, templates, or assets used across talks
+```
+
+<br />
+
 
 **Note:**
 - Demo code is written to **teach**, not for production. Expect shortcuts.

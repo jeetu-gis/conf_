@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stop Handing Your Secrets to an Agent: Resources</title>
+    <style>
+      :root {
+        --bg: #12151c;
+        --card: #1a1f2a;
+        --line: #2a3140;
+        --text: #f0ede4;
+        --muted: #9aa3b5;
+        --accent: #f0a84a;
+        --link: #7fd4e6;
+      }
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #f4f1ea;
+          --card: #fffdf8;
+          --line: #ddd7c8;
+          --text: #14171f;
+          --muted: #5b6475;
+          --accent: #b8650a;
+          --link: #0b6f87;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font:
+          16px/1.5 -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 48px 16px 64px;
+      }
+      .kicker {
+        color: var(--accent);
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      h1 {
+        font-size: clamp(28px, 5vw, 40px);
+        line-height: 1.15;
+        margin: 8px 0 6px;
+        letter-spacing: -0.01em;
+      }
+      .sub {
+        color: var(--muted);
+        margin: 0 0 36px;
+      }
+      section {
+        margin-bottom: 32px;
+      }
+      h2 {
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0 0 10px;
+        font-weight: 600;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      li {
+        padding: 14px 16px;
+        border-top: 1px solid var(--line);
+      }
+      li:first-child {
+        border-top: 0;
+      }
+      a {
+        color: var(--link);
+        text-decoration: none;
+        font-weight: 500;
+      }
+      a:hover,
+      a:focus-visible {
+        text-decoration: underline;
+      }
+      .note {
+        display: block;
+        color: var(--muted);
+        font-size: 14px;
+        margin-top: 2px;
+      }
+      .also {
+        color: var(--muted);
+        font-size: 14px;
+        margin-top: 2px;
+        display: block;
+      }
+      footer {
+        color: var(--muted);
+        font-size: 13px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="kicker"></div>
+      <h1>Stop Handing Your Secrets to an Agent</h1>
+      <p class="sub">Sources and further reading</p>
+
+      <section>
+        <h2>Incidents</h2>
+        <ul>
+          <li>
+            <a href="https://www.stepsecurity.io/blog/a-mini-shai-hulud-has-appeared">
+              StepSecurity: A Mini Shai-Hulud Has Appeared
+            </a>
+            <span class="note">29 April 2026. Full deobfuscation, IOCs, persistence files.</span>
+          </li>
+          <li>
+            <a href="https://tanstack.com/blog/npm-supply-chain-compromise-postmortem">
+              TanStack: npm supply-chain compromise postmortem
+            </a>
+            <span class="note">11 to 15 May 2026</span>
+          </li>
+          <li>
+            <a href="https://cybelangel.com/blog/tanstack-npm-supply-chain-attack/">
+              CybelAngel: TanStack packages with valid SLSA provenance
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://labs.cloudsecurityalliance.org/research/csa-research-note-mini-shai-hulud-multi-ecosystem-supply-cha/"
+            >
+              Cloud Security Alliance research note: Mini Shai-Hulud
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.stepsecurity.io/blog/supply-chain-security-alert-popular-nx-build-system-package-compromised-with-data-stealing-malware"
+            >
+              StepSecurity: s1ngularity, the Nx compromise
+            </a>
+            <span class="note">27 August 2025</span>
+          </li>
+          <li>
+            <a href="https://www.docker.com/blog/coding-agent-horror-stories-the-29-million-secret-problem/">
+              Docker: Coding agent horror stories, the 29 million secret problem
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Data</h2>
+        <ul>
+          <li>
+            <a href="https://blog.gitguardian.com/the-state-of-secrets-sprawl-2026/">
+              GitGuardian: State of Secrets Sprawl 2026, blog summary
+            </a>
+            <span class="also">
+              Also:
+              <a href="https://www.gitguardian.com/state-of-secrets-sprawl-report-2026">report page</a>
+            </span>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Registries and platforms</h2>
+        <ul>
+          <li>
+            <a
+              href="https://github.blog/changelog/2025-11-05-npm-security-update-classic-token-creation-disabled-and-granular-token-changes/"
+            >
+              GitHub changelog: npm classic token creation disabled, granular token changes
+            </a>
+            <span class="note">5 November 2025</span>
+          </li>
+          <li>
+            <a
+              href="https://github.blog/changelog/2025-12-09-npm-classic-tokens-revoked-session-based-auth-and-cli-token-management-now-available/"
+            >
+              GitHub changelog: npm classic tokens revoked, session-based auth
+            </a>
+            <span class="note">9 December 2025</span>
+          </li>
+          <li>
+            <a
+              href="https://github.blog/changelog/2026-05-11-secret-scanning-with-github-mcp-server-is-now-generally-available/"
+            >
+              GitHub changelog: secret scanning with the GitHub MCP server is GA
+            </a>
+          </li>
+          <li>
+            <a href="https://gist.github.com/mcollina/b294a6c39ee700d24073c0e5a4e93104">
+              Matteo Collina: configuring minimum release age across npm, pnpm and Yarn
+            </a>
+          </li>
+          <li>
+            <a href="https://nesbitt.io/2026/03/04/package-managers-need-to-cool-down">
+              Andrew Nesbitt: Package managers need to cool down
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Agent controls</h2>
+        <ul>
+          <li>
+            <a href="https://code.claude.com/docs/zh-CN/sandboxing">Claude Code docs: sandboxing</a>
+            <span class="note">
+              Credentials deny and mask, protected paths, limitations. The English page is the same path under
+              /docs/en/.
+            </span>
+          </li>
+          <li>
+            <a href="https://docs.claude.com/en/docs/claude-code/settings">Claude Code docs: settings</a>
+            <span class="note">Permission rules, disableBypassPermissionsMode.</span>
+          </li>
+        </ul>
+      </section>
+
+      <footer>If your agent can read a secret, assume it can leak it.</footer>
+    </main>
+  </body>
+</html>
